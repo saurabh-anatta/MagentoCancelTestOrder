@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <AnattaDesign_CancelTestOrder>
+            <active>true</active>
+            <codePool>local</codePool>
+        </AnattaDesign_CancelTestOrder>
+    </modules>
+</config>
