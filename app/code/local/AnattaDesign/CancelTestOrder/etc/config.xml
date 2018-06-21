@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <modules>
-        <AnattaDesign_CancelTestOrder>
-            <version>0.1.0</version>
-        </AnattaDesign_CancelTestOrder>
-    </modules>
-    <global>
-	    <models>
-		    <anattadesign_cancelorder>
-			    <class>AnattaDesign_Customization_Model</class>
-		    </anattadesign_cancelorder>
-	    </models>
-    </global>
-	<frontend>
-        <events>
-			<checkout_onepage_controller_success_action>
-				<observers>
-					<anatta_cancel_test_order>
-						<class>anattadesign_cancelorder/observer</class>
-						<method>changeOrderStatusToCancel</method>
-					</anatta_cancel_test_order>
-				</observers>
-			</checkout_onepage_controller_success_action>
-			<checkout_multishipping_controller_success_action>
-				<observers>
-					<anatta_cancel_test_order>
-						<class>anattadesign_cancelorder/observer</class>
-						<method>changeOrderStatusToCancel</method>
-					</anatta_cancel_test_order>
-				</observers>
-			</checkout_multishipping_controller_success_action>
-        </events>
-	</frontend>
+<modules>
+    <AnattaDesign_CancelTestOrder>
+        <version>0.1.0</version>
+    </AnattaDesign_CancelTestOrder>
+</modules>
+<global>
+    <models>
+        <anattadesign_cancelorder>
+            <class>AnattaDesign_Customization_Model</class>
+        </anattadesign_cancelorder>
+    </models>
+</global>
+<frontend>
+    <events>
+        <checkout_onepage_controller_success_action>
+            <observers>
+                <anatta_cancel_test_order>
+                    <class>anattadesign_cancelorder/observer</class>
+                    <method>changeOrderStatusToCancel</method>
+                </anatta_cancel_test_order>
+            </observers>
+        </checkout_onepage_controller_success_action>
+        <checkout_multishipping_controller_success_action>
+            <observers>
+                <anatta_cancel_test_order>
+                    <class>anattadesign_cancelorder/observer</class>
+                    <method>changeOrderStatusToCancel</method>
+                </anatta_cancel_test_order>
+            </observers>
+        </checkout_multishipping_controller_success_action>
+    </events>
+</frontend>
 </config>
